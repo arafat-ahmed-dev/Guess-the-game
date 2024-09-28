@@ -26,12 +26,13 @@ submit.addEventListener("click",(e)=> {
         submit.disabled = true;
         newGame.disabled = false;
         data = [];
-        previousValue.innerHTML = ''
+        previousValue.innerHTML = '';
+        randomNumber = Math.floor(Math.random() * 100);
     }
     }else{
         result.innerHTML = "Please enter a number between 1 and 100";
     }
-    randomNumber = Math.floor(Math.random() * 100);
+    
 })
 newGame.addEventListener("click",()=>{
     submit.disabled = false;
