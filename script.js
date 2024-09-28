@@ -5,7 +5,7 @@ result = document.querySelector("#result");
 let randomNumber = Math.floor(Math.random() * 100),
 previousValue = document.querySelector(".previous-value"),
 data = [];
-
+alert(randomNumber);
 submit.addEventListener("click",(e)=> {
     e.preventDefault();
     const inputValue = document.querySelector("#guess").value
