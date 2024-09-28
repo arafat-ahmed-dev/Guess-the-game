@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the number || Arafat Ahmed</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -14,16 +15,16 @@
         </div>
         <form>
             Guess : <input type="number" id="guess" name="guess" min="1"
-            max="100" required placeholder="Enter the number" class="input-value">
+            max="100" placeholder="Enter the number" required>
             <div class="controls">
-                <button type="submit">Submit</button>
-                <button disabled type="button">New Game</button>
+                <button type="submit" class="submit">Submit</button>
+                <button disabled type="button" class="new">New Game</button>
             </div>
         </form>
-        <div class="result">
-            <p id="result">You're win!!</p>
+        <div>
+            <p id="result"></p>
             <p class="previous-value">
-                Previous Value : 10, 20, 30
+                <!-- Previous Value : 10, 20, 30 -->
             </p>
         </div>
     </main>
